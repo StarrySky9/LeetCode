@@ -36,14 +36,14 @@ class Solution(object):
  ## Think                
  1. 使用Python built-in function:enumerate()
  ```
-     Python program to illustrate 
-     enumerate function in loops 
-    l1 = ["eat","sleep","repeat"] 
-     printing the tuples in object directly 
-    print(list(enumerate(l1)))
-    
-    # Output:
-    [(0, 'eat'), (1, 'sleep'), (2, 'repeat')]
+# Python program to illustrate 
+# enumerate function in loops 
+  l1 = ["eat","sleep","repeat"] 
+# printing the tuples in object directly 
+  print(list(enumerate(l1)))
+  
+# Output:
+  [(0, 'eat'), (1, 'sleep'), (2, 'repeat')]
 ```    
 2. 创建 空 字典保存"新" Key-value
     使得 index/key 与 value 对换，方便对比value与target
