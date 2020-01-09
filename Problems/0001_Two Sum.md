@@ -16,6 +16,7 @@ return [0, 1].
 ```
 
 ## Code
+```
 ##!python 3
 class Solution(object):
     def twoSum(self, nums, target):
@@ -31,7 +32,7 @@ class Solution(object):
                 return [dict[m], i]
             else:
                 dict[n] = i
- 
+ ```
  ## Think                
  1. 使用Python built-in function:enumerate()
     
