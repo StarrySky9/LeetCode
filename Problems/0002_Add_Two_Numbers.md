@@ -18,7 +18,7 @@ Explanation: 342 + 465 = 807.
 设立一个表示进位的变量carried，建立一个新链表，
 把输入的两个链表从头往后同时处理，每两个相加，将结果加上carried后的值作为一个新节点到新链表后面。
 
-![2.addTwoNumbers](../assets/2.addTwoNumbers.gif)
+![2.addTwoNumbers](https://camo.githubusercontent.com/6bc31a7535730021d9ced7499adaa9d36312cad3/68747470733a2f2f626c6f672d313235373132363534392e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f626c6f672f667a3933332e676966)
 
 (图片来自： https://github.com/MisterBooo/LeetCodeAnimation)
 
