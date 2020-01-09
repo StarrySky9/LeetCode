@@ -30,5 +30,13 @@ class Solution(object):
                 d[n] = i
  
  ## Think                
-                
+1. 使用Python built-in function:enumerate()
+    # Python program to illustrate 
+    # enumerate function in loops 
+    l1 = ["eat","sleep","repeat"] 
+    # printing the tuples in object directly 
+    print(list(enumerate(l1)))
+    
+    # Output:
+    [(0, 'eat'), (1, 'sleep'), (2, 'repeat')]
                 
