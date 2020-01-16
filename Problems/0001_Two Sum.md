@@ -45,7 +45,8 @@ class Solution(object):
 # Output:
   [(0, 'eat'), (1, 'sleep'), (2, 'repeat')]
 ```    
-2. 创建 空 字典保存"新" Key-value
+2. 由于题目没有对空间复杂度有求，用一个hashmap 存储已经访问过的数字即可。
+3. 创建 空 字典保存"新" Key-value
     使得 index/key 与 value 对换，方便对比value与target
 
 
