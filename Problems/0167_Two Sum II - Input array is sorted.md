@@ -19,7 +19,8 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 ```
 
 ## 思路
-与0001思路一样，区别在于返回index按照语言逻辑序列
+A. 与0001思路一样，区别在于返回index按照语言逻辑序列
+B. 假如题目空间复杂度有要求，由于数组是有序的，只需要双指针即可。一个left指针，一个right指针， 如果left + right 值 大于target 则 right左移动， 否则left右移，代码见下方python code。
 
 ## 答案
 ```
@@ -31,4 +32,17 @@ class Solution:
                 return [dictionary[target - number], index + 1]
             else:
                 dictionary[number] = index + 1
- ···               
+```
+```
+Two Pointers
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left, right = 0, len(numbers) - 1
+        while left < right:
+            if numbers[left] + numbers[right] < target:
+                left += 1
+            if numbers[left] + numbers[right] > target:
+                right -= 1
+            if numbers[left] + numbers[right] == target:
+                return [left+1, right+1]
+```                
