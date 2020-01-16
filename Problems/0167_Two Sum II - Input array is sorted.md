@@ -24,26 +24,26 @@ B. 假如题目空间复杂度有要求，由于数组是有序的，只需要�
 
 ## 答案
 ```
-Runtime: 48 ms
-class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        dictionary = {}
-        for index, number in enumerate(numbers):
-            if target-number in dictionary:
-                return [dictionary[target - number], index + 1]
-            else:
-                dictionary[number] = index + 1
+    Runtime: 48 ms
+    class Solution:
+        def twoSum(self, numbers: List[int], target: int) -> List[int]:
+            dictionary = {}
+           for index, number in enumerate(numbers):
+              if target-number in dictionary:
+                  return [dictionary[target - number], index + 1]
+                else:
+                 dictionary[number] = index + 1
 ```
 ```
-Two Pointers - Runtime: 48 ms
-class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        left, right = 0, len(numbers) - 1
-        while left < right:
-            if numbers[left] + numbers[right] < target:
-                left += 1
-            if numbers[left] + numbers[right] > target:
-                right -= 1
-            if numbers[left] + numbers[right] == target:
-                return [left+1, right+1]
+    Two Pointers - Runtime: 48 ms
+    class Solution:
+        def twoSum(self, numbers: List[int], target: int) -> List[int]:
+            left, right = 0, len(numbers) - 1
+            while left < right:
+               if numbers[left] + numbers[right] < target:
+                 left += 1
+             if numbers[left] + numbers[right] > target:
+                    right -= 1
+                if numbers[left] + numbers[right] == target:
+                   return [left+1, right+1]
 ```                
