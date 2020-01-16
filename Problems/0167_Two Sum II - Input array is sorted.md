@@ -19,7 +19,7 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 ```
 
 ## 思路
-A. 与0001思路一样，区别在于返回index按照语言逻辑序列
+A. 与0001思路一样，区别在于返回index按照语言逻辑序列\n
 B. 假如题目空间复杂度有要求，由于数组是有序的，只需要双指针即可。一个left指针，一个right指针， 如果left + right 值 大于target 则 right左移动， 否则left右移，代码见下方python code。
 
 ## 答案
