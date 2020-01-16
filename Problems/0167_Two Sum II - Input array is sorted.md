@@ -24,6 +24,7 @@ B. 假如题目空间复杂度有要求，由于数组是有序的，只需要�
 
 ## 答案
 ```
+Runtime: 48 ms
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         dictionary = {}
@@ -34,7 +35,7 @@ class Solution:
                 dictionary[number] = index + 1
 ```
 ```
-Two Pointers
+Two Pointers - Runtime: 48 ms
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         left, right = 0, len(numbers) - 1
