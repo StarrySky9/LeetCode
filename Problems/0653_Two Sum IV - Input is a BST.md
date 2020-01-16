@@ -1,7 +1,7 @@
-#653. Two Sum IV - Input is a BST
-## Link
+##653. Two Sum IV - Input is a BST
+### Link
 https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
-## Problems
+### Problems
 ```
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
 
@@ -32,5 +32,5 @@ Target = 28
 
 Output: False
 ```
-## Related Topics
+### Related Topics
 Tree
