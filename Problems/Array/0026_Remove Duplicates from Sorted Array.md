@@ -41,3 +41,27 @@ for (int i = 0; i < len; i++) {
 ### Related Topics
 - Array
 - Two Pointers
+
+
+### 思路
+- 需要注意：给的数组中，各个数值是按照从小到大的顺序排列。高级要求： sort()
+- 双指针，快慢指针分别遍历数组
+- 比较快慢指针对应值；1. 对应值相同，快指针往前，不相同两个都往前。
+
+
+### Code
+```python3
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        nums.sort()
+        if nums:
+            slow = 0
+            for fast in range(1, len(nums)):
+                if nums[slow] != nums[fast]:
+                    slow += 1
+                    nums[slow] = nums[fast]
+            return slow + 1
+        else:
+            return 0
+```
+
